@@ -88,4 +88,11 @@ h4 {
 		padding-left: $main-padding;
 	}
 
+	.announcement {
+		h2 {
+			padding-right: $main-padding;
+			margin-bottom: 0;
+		}
+	}
+
 }

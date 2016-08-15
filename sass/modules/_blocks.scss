@@ -13,9 +13,9 @@
     }
 
     &:hover img {
-  		-moz-transform: scale(1.1);
-  		-webkit-transform: scale(1.1);
-  		transform: scale(1.1);
+  		-moz-transform: scale(1.03);
+  		-webkit-transform: scale(1.03);
+  		transform: scale(1.03);
 	}
 }
 
@@ -36,7 +36,7 @@
 	justify-content: center;
 }
 
-.testimonial, .callout {
+.testimonial, .callout, .announcement {
 	padding: $main-padding;
 	display: block;
 }
@@ -97,6 +97,24 @@
 		font-size: $trunc-font-size;
 		line-height: $trunc-line-height;
 		-webkit-line-clamp: $trunc-line-clamp;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	$h2-trunc-font-size: 24px;
+	$h2-trunc-line-height: 1.1;
+	$h2-trunc-line-clamp: 4;
+	
+	.block-truncate-h2 {
+		display: block; /* Fallback for non-webkit */
+		display: -webkit-box;
+		max-width: 400px;
+		height: $h2-trunc-font-size*$h2-trunc-line-height*$h2-trunc-line-clamp; /* Fallback for non-webkit */
+		margin: 0 auto;
+		font-size: $h2-trunc-font-size;
+		line-height: $h2-trunc-line-height;
+		-webkit-line-clamp: $h2-trunc-line-clamp;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
 		text-overflow: ellipsis;

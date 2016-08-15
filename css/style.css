@@ -164,6 +164,12 @@ h4 {
   h2 {
     padding-left: 33px;
   }
+
+  /* line 92, ../sass/modules/_typography.scss */
+  .announcement h2 {
+    padding-right: 33px;
+    margin-bottom: 0;
+  }
 }
 /* Blocks */
 /* Image Blocks */
@@ -180,9 +186,9 @@ h4 {
 }
 /* line 15, ../sass/modules/_blocks.scss */
 .featured-item:hover img, .grid-item:hover img {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -moz-transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 /* Text Blocks */
@@ -194,7 +200,7 @@ h4 {
 }
 
 /* line 39, ../sass/modules/_blocks.scss */
-.testimonial, .callout {
+.testimonial, .callout, .announcement {
   padding: 33px;
   display: block;
 }
@@ -253,6 +259,23 @@ h4 {
     margin: 0 auto;
     font-size: 14px;
     line-height: 1.429;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* line 109, ../sass/modules/_blocks.scss */
+  .block-truncate-h2 {
+    display: block;
+    /* Fallback for non-webkit */
+    display: -webkit-box;
+    max-width: 400px;
+    height: 105.6px;
+    /* Fallback for non-webkit */
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 1.1;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
