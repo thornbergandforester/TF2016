@@ -1,7 +1,7 @@
 /*
 	TF Bootstrap Sass Theme
 	Author: Morgan Goldberg
-	Version: 0.2.0
+	Version: 0.3.0
 */
 /* BASE - Base styles, variables, mixins, etc */
 /* line 1, ../sass/base/_normalize.scss */
@@ -372,15 +372,16 @@ h4 {
 /* line 28, ../sass/layouts/_nav.scss */
 .navbar-nav {
   margin: 0;
+  width: 25%;
 }
 
-/* line 32, ../sass/layouts/_nav.scss */
+/* line 33, ../sass/layouts/_nav.scss */
 .navbar-header {
   float: right;
   margin-top: 5px;
 }
 
-/* line 37, ../sass/layouts/_nav.scss */
+/* line 38, ../sass/layouts/_nav.scss */
 .navbar-brand {
   height: 53px;
   margin: 0;
@@ -389,7 +390,7 @@ h4 {
 
 /* Media Queries */
 @media (min-width: 768px) {
-  /* line 49, ../sass/layouts/_nav.scss */
+  /* line 50, ../sass/layouts/_nav.scss */
   .navbar {
     padding: 33px;
   }
