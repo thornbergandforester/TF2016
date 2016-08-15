@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+}
+
+body {
+	font-family: $base-font-family; 
+   	font-weight: $base-font-weight;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	color: $base-font-color;
+}
+
+html, body {
+	height: 100%;
+}
+
+a {
+	color: $base-font-color;
+
+	&:hover {
+		color: $base-font-color;
+		text-decoration: none;
+	}
+}
+
+ul,li {
+	list-style: none;
+}
+
+input, textarea, button {
+	@include border-radius(0px);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

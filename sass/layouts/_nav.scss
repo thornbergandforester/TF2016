@@ -1,0 +1,53 @@
+/* Navbar */
+
+.navbar {
+	background-color: $reverse-color;
+	min-height: 53px;
+	border:none;
+	border-radius: 0;
+	padding: $xs-padding $main-padding $xs-padding $xs-padding;
+
+	li {
+		float: none;
+		
+		a {
+			font-family: $nav-font-family;
+			font-weight: $nav-font-weight;
+			font-size: $nav-font-size;
+			padding: 0 0 2px 0;
+			border: none;
+		}
+	}
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+	background: none;
+	color: $primary-color;
+}
+
+.navbar-nav {
+	margin: 0;
+}
+
+.navbar-header {
+	float: right;
+	margin-top: 5px;
+}
+
+.navbar-brand {
+	height: 53px;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: $screen-sm-min) {
+
+	.navbar {
+		padding: $main-padding;
+	}
+	
+}

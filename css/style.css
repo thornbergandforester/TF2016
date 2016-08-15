@@ -1,0 +1,434 @@
+/*
+	TF Bootstrap Sass Theme
+	Author: Morgan Goldberg
+	Version: 0.2.0
+*/
+/* BASE - Base styles, variables, mixins, etc */
+/* line 1, ../sass/base/_normalize.scss */
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+}
+
+/* line 5, ../sass/base/_normalize.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, ../sass/base/_normalize.scss */
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* line 15, ../sass/base/_normalize.scss */
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Font */
+/* Padding */
+/* Colors */
+/* Media Queries */
+/* line 1, ../sass/base/_base.scss */
+* {
+  margin: 0;
+}
+
+/* line 5, ../sass/base/_base.scss */
+body {
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.429em;
+  color: black;
+}
+
+/* line 13, ../sass/base/_base.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 17, ../sass/base/_base.scss */
+a {
+  color: black;
+}
+/* line 20, ../sass/base/_base.scss */
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 26, ../sass/base/_base.scss */
+ul, li {
+  list-style: none;
+}
+
+/* line 30, ../sass/base/_base.scss */
+input, textarea, button {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* line 34, ../sass/base/_base.scss */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* MODULES - Individual site components */
+/* Typography */
+/* Project Title */
+/* line 5, ../sass/modules/_typography.scss */
+h1 {
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
+/* Page Header & Client Name */
+/* line 15, ../sass/modules/_typography.scss */
+h2 {
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 38px;
+  padding-left: 18px;
+}
+
+/* Project Descriptors */
+/* line 26, ../sass/modules/_typography.scss */
+h3 {
+  font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* line 35, ../sass/modules/_typography.scss */
+.project-descriptor {
+  margin-bottom: 0;
+}
+
+/* Thumb Img Overlay Title */
+/* line 41, ../sass/modules/_typography.scss */
+h4 {
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Thumb Color Classes */
+/* line 51, ../sass/modules/_typography.scss */
+.black-text {
+  color: black;
+}
+
+/* line 55, ../sass/modules/_typography.scss */
+.white-text {
+  color: white;
+}
+
+/* Custom Type Classes */
+/* line 62, ../sass/modules/_typography.scss */
+.caption h4 {
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 400;
+}
+/* line 67, ../sass/modules/_typography.scss */
+.caption p {
+  font-size: 12px;
+}
+
+/* line 73, ../sass/modules/_typography.scss */
+.contact-address p {
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.286em;
+  margin-bottom: 18px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  /* line 87, ../sass/modules/_typography.scss */
+  h2 {
+    padding-left: 33px;
+  }
+}
+/* Blocks */
+/* Image Blocks */
+/* line 5, ../sass/modules/_blocks.scss */
+.featured-item, .grid-item {
+  position: relative;
+  overflow: hidden;
+}
+/* line 9, ../sass/modules/_blocks.scss */
+.featured-item img, .grid-item img {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 15, ../sass/modules/_blocks.scss */
+.featured-item:hover img, .grid-item:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Text Blocks */
+/* line 33, ../sass/modules/_blocks.scss */
+.block-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* line 39, ../sass/modules/_blocks.scss */
+.testimonial, .callout {
+  padding: 33px;
+  display: block;
+}
+
+/* line 44, ../sass/modules/_blocks.scss */
+.side-info {
+  margin-top: 33px;
+}
+/* line 47, ../sass/modules/_blocks.scss */
+.side-info li {
+  margin-bottom: 10px !important;
+}
+
+/* line 52, ../sass/modules/_blocks.scss */
+.list, .service {
+  padding-bottom: 15px;
+}
+
+/* line 56, ../sass/modules/_blocks.scss */
+.contact-address {
+  padding-left: 18px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  /* line 66, ../sass/modules/_blocks.scss */
+  .info {
+    padding-right: 6.71875%;
+  }
+
+  /* line 70, ../sass/modules/_blocks.scss */
+  .side-info {
+    margin-top: 0;
+    padding-left: 18px;
+  }
+
+  /* line 75, ../sass/modules/_blocks.scss */
+  .no-header-column {
+    padding-top: 30px;
+  }
+
+  /* line 79, ../sass/modules/_blocks.scss */
+  .contact-address {
+    padding-left: 33px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 91, ../sass/modules/_blocks.scss */
+  .block-truncate {
+    display: block;
+    /* Fallback for non-webkit */
+    display: -webkit-box;
+    max-width: 400px;
+    height: 80.024px;
+    /* Fallback for non-webkit */
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.429;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+/* Sections */
+/* Page Title Section */
+/* line 5, ../sass/modules/_sections.scss */
+.section-title {
+  margin-top: 152px;
+}
+
+/* No Page Title Section */
+/* line 11, ../sass/modules/_sections.scss */
+.section-notitle {
+  margin-top: 216px;
+}
+
+/* Contact Section */
+/* line 17, ../sass/modules/_sections.scss */
+.section-contact {
+  margin-top: 114px;
+}
+
+/* Single Article Sections */
+/* line 23, ../sass/modules/_sections.scss */
+.section-article {
+  padding: 77px 0 77px 0;
+}
+
+/* line 27, ../sass/modules/_sections.scss */
+.section-article-last {
+  padding: 0;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  /* line 37, ../sass/modules/_sections.scss */
+  .section-title {
+    margin-top: 182px;
+  }
+
+  /* line 41, ../sass/modules/_sections.scss */
+  .section-notitle {
+    margin-top: 246px;
+  }
+}
+/* Components */
+/* Image Thumbnail Label */
+/* line 5, ../sass/modules/_components.scss */
+.top-left {
+  position: absolute;
+  top: 33px;
+  left: 18px;
+}
+
+/* Helper For .row Images */
+/* line 13, ../sass/modules/_components.scss */
+.remove-side-margins, .grid-item, .block-project-asset, .block-studio, .headshot {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* Custom Link Style */
+/* line 20, ../sass/modules/_components.scss */
+.linked:after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  width: 12px;
+  height: 26px;
+  border-bottom: 2px solid black;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  /* line 35, ../sass/modules/_components.scss */
+  .top-left {
+    left: 33px;
+  }
+
+  /* line 39, ../sass/modules/_components.scss */
+  .linked:after {
+    left: 33px;
+  }
+}
+/* LAYOUTS - Page layout styles */
+/* Navbar */
+/* line 3, ../sass/layouts/_nav.scss */
+.navbar {
+  background-color: white;
+  min-height: 53px;
+  border: none;
+  border-radius: 0;
+  padding: 18px 33px 18px 18px;
+}
+/* line 10, ../sass/layouts/_nav.scss */
+.navbar li {
+  float: none;
+}
+/* line 13, ../sass/layouts/_nav.scss */
+.navbar li a {
+  font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 0 0 2px 0;
+  border: none;
+}
+
+/* line 23, ../sass/layouts/_nav.scss */
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+  background: none;
+  color: black;
+}
+
+/* line 28, ../sass/layouts/_nav.scss */
+.navbar-nav {
+  margin: 0;
+}
+
+/* line 32, ../sass/layouts/_nav.scss */
+.navbar-header {
+  float: right;
+  margin-top: 5px;
+}
+
+/* line 37, ../sass/layouts/_nav.scss */
+.navbar-brand {
+  height: 53px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  /* line 49, ../sass/layouts/_nav.scss */
+  .navbar {
+    padding: 33px;
+  }
+}
+/* Footer */
+/* line 3, ../sass/layouts/_footer.scss */
+footer {
+  margin-top: 83px;
+  margin-bottom: 20px;
+  padding: 33px 3px;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+/* line 12, ../sass/layouts/_footer.scss */
+footer a {
+  border: none;
+}
+/* line 15, ../sass/layouts/_footer.scss */
+footer a:hover, footer a:focus {
+  text-decoration: none;
+  color: black;
+}
+/* line 21, ../sass/layouts/_footer.scss */
+footer .logo-icon {
+  float: right;
+  padding-right: 15px;
+}
+/* line 25, ../sass/layouts/_footer.scss */
+footer .logo-icon img {
+  width: 56px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  /* line 37, ../sass/layouts/_footer.scss */
+  footer {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+}

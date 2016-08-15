@@ -1,0 +1,45 @@
+/* Sections */
+
+/* Page Title Section */
+
+.section-title {
+	margin-top: 152px;
+}
+
+/* No Page Title Section */
+
+.section-notitle {
+	margin-top: 216px;
+}
+
+/* Contact Section */
+
+.section-contact {
+	margin-top: 114px;
+}
+
+/* Single Article Sections */
+
+.section-article {
+	padding: 77px 0 77px 0;
+}
+
+.section-article-last {
+	padding: 0;
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: $screen-sm-min) {
+
+	.section-title {
+		margin-top: 182px;
+	}
+
+	.section-notitle {
+		margin-top: 246px;
+	}
+	
+}

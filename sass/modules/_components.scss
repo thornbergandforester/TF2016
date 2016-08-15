@@ -1,0 +1,43 @@
+/* Components */
+
+/* Image Thumbnail Label */
+
+.top-left {
+    position: absolute;
+    top: $main-padding;
+    left: $xs-padding;
+}
+
+/* Helper For .row Images */
+
+.remove-side-margins {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+/* Custom Link Style */
+
+.linked:after {
+	content: "";
+	position: absolute;
+	left: $xs-padding;
+	width: 12px;
+	height: 26px;
+	border-bottom: 2px solid $primary-color;
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: $screen-sm-min) {
+
+	.top-left {
+	    left: $main-padding;
+	}
+	
+	.linked:after {
+		left: $main-padding;
+	}
+
+}

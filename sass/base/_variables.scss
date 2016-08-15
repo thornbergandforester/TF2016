@@ -1,0 +1,33 @@
+/* Font */
+
+$base-font-size: 14px;
+$base-font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+$base-font-weight: 300;
+$base-line-height: 1.429em;
+$base-font-color: #000000;
+
+$nav-font-size: 12px;
+$nav-font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+$nav-font-weight: 500;
+
+$footer-font-size: 12px;
+$footer-font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+$footer-font-weight: 400;
+$footer-line-height: 1.5em;
+
+/* Padding */
+
+$xs-padding: 18px;
+$main-padding: 33px;
+
+/* Colors */
+
+$primary-color: #000000;
+$reverse-color: #ffffff;
+
+/* Media Queries */
+
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;

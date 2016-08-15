@@ -1,0 +1,42 @@
+/* Footer */
+
+footer {
+	margin-top: 83px;
+	margin-bottom: 20px;
+	padding: $main-padding 3px;
+	font-family: $footer-font-family;
+	font-weight: $footer-font-weight;
+	font-size: $footer-font-size;
+	line-height: $footer-line-height;
+
+	a {
+		border: none;
+		
+		&:hover, &:focus {
+			text-decoration: none;
+			color: $primary-color;
+		}
+	}
+
+	.logo-icon {
+		float: right;
+		padding-right: 15px;
+
+		img {
+			width: 56px;
+		}
+	}
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: $screen-sm-min) {
+
+	footer {
+		padding-right: $xs-padding;
+		padding-left: $xs-padding;
+	}
+	
+}

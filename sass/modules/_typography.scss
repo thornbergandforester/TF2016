@@ -1,0 +1,91 @@
+/* Typography */
+
+/* Project Title */
+
+h1 {
+	font-family: $base-font-family;
+	font-weight: $base-font-weight;
+	font-size: 36px;
+	margin-top: 0;
+	margin-bottom: 70px;
+}
+
+/* Page Header & Client Name */
+
+h2 {
+	font-family: $footer-font-family;
+	font-weight: $footer-font-weight;
+	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 38px;
+	padding-left: $xs-padding;
+}
+
+/* Project Descriptors */
+
+h3 {
+	font-family: $nav-font-family;
+	font-weight: $nav-font-weight;
+	font-size: $base-font-size;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.project-descriptor {
+	margin-bottom: 0;
+}
+
+/* Thumb Img Overlay Title */
+
+h4 {
+	font-family: $base-font-family;
+	font-weight: $base-font-weight;
+	font-size: $base-font-size;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Thumb Color Classes */
+
+.black-text {
+	color: $primary-color;
+}
+
+.white-text {
+	color: $reverse-color;
+}
+
+/* Custom Type Classes */
+
+.caption {
+	h4 {
+		font-family: $footer-font-family;
+		font-weight: $footer-font-weight;
+	}
+
+	p {
+		font-size: 12px;
+	}
+}
+
+.contact-address {
+	p {
+		font-family: $footer-font-family;
+		font-weight: $footer-font-weight;
+		line-height: 1.286em;
+		margin-bottom: 18px;
+	}
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: $screen-sm-min) {
+
+	h2 {
+		padding-left: $main-padding;
+	}
+
+}
