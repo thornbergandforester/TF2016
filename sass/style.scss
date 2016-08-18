@@ -1,7 +1,17 @@
 /*
-	TF Bootstrap Sass Theme
-	Author: Morgan Goldberg
-	Version: 0.3.0
+Theme Name: Thornberg WP
+Theme URI: http://thornbergandforester.com
+Author: Morgan Goldberg
+Author URI: 
+Description: Fully responsive WordPress portfolio theme built using Bootstrap 3. 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: responsive-layouts, custom-header, custom-menu, featured-images, translation-ready
+Text Domain: thornbergwp
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
 
 /* BASE - Base styles, variables, mixins, etc */
@@ -23,4 +33,3 @@
 @import 'layouts/_nav.scss';
 @import 'layouts/_header.scss';
 @import 'layouts/_footer.scss';
-
